@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over_All_CODINGSCORE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Philosopher:ital@1&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-base.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="coding_score.css">
+</head>
+
+<body>
+  <div id="center">
+    <h1>Calculate Over_All Coding Score On Different Platefroms</h1>
+    <div class="user_name">
+      <input type="text" placeholder="codechef username" id="user_codechef">
+      <input type="text" placeholder="spoj username" id="user_spoj">
+      <input type="text" placeholder="interviewbit username" id="user_interviewbit">
+      <input type="text" placeholder="codeforces username" id="user_codeforces">
+    </div>
+    <div class="plateforms">
+      <h2>Codechef: <span id="codechef">0</span></h2>
+      <h2>Spoj: <span id="spoj">0</span></h2>
+      <h2>Interviewbit_score: <span id="interviewbit">0</span></h2>
+      <h2>Codeforces: <span id="codeforces">0</span></h2>
+    </div>
+  </div>
+  <br>
+  <button onclick="myfunction()">enter to get</button>
+
+  <p id="short_info">You have solved total: <span id="total_sum">0</span> problems on codechef,codeforces,spoj and your
+    total interviewbit score is:<span id="total_score">0</span></p>
+  <div id="container"></div>
+
+  <script type="text/javascript" src="coding_score.js"></script>
+</body>
+
+</html>
